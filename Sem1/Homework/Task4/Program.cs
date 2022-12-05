@@ -32,6 +32,7 @@ if(number1Line != null && number2Line != null && number3Line != null)
         max = number3;
     } 
 
+    // Выводим максимальное число в консоль
     Console.WriteLine("Максимальное число равно " + max);   
         
 }

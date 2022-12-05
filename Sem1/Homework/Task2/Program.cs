@@ -27,6 +27,6 @@ if(number1Line!=null && number2Line!=null)
         max = number2;
     }
 
-    // Выводим максимальное число в консоле
+    // Выводим максимальное число в консоль
     Console.WriteLine("Максимальное число равно " + max);
 }
