@@ -3,7 +3,8 @@
 // 78 -> третьей цифры нет
 // 32679 -> 6
 
-static int ReadNumber(string text)
+//метод, который считывает int с консоли
+static int ReadNumber(string text) 
 {
     Console.WriteLine(text);
     string? numberline = Console.ReadLine();
@@ -17,13 +18,13 @@ static int ReadNumber(string text)
 
 int number = ReadNumber("Введите число");
 
-if (number > 99)
+if (number > 99) 
 {
-    string arrayOfDigits = number.ToString();
-    Console.WriteLine(arrayOfDigits[2]);
+    string arrayOfDigits = number.ToString(); //преобразуем int в string, чтобы пользоваться строкой как массивом
+    Console.WriteLine(arrayOfDigits[2]); //выводим данные в консоль
 }
 else
 {
-    Console.WriteLine("Третьей цифры нет");
+    Console.WriteLine("Третьей цифры нет"); //выводим данные в консоль
 }
 

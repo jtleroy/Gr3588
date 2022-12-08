@@ -1,13 +1,13 @@
 ﻿//Задача 10: Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
 //456 -> 5
 
-Console.WriteLine("Введите трехзначное число");
-string? numberline = Console.ReadLine();
+Console.WriteLine("Введите трехзначное число"); 
+string? numberline = Console.ReadLine(); //вводим данные в консоль
 
-if (numberline != null)
+if (numberline != null) //проверка наличия значения
 {
-    int number = int.Parse(numberline);
-    number = number % 100;
-    number = number / 10;
-    Console.WriteLine(number);
+    int number = int.Parse(numberline); //парсим введенное число
+    number = number % 100; //оставляем только последние две цифры
+    number = number / 10; //оставляем вторую цифру
+    Console.WriteLine(number); //выводим в консоль
 }

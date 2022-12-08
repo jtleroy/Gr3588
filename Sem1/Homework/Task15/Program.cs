@@ -4,6 +4,7 @@
 // 7 -> да
 // 1 -> нет
 
+//метод, который считывает int с консоли
 static int ReadNumber(string text)
 {
     Console.WriteLine(text);
@@ -16,20 +17,20 @@ static int ReadNumber(string text)
     return 0;
 }
 
-int number = ReadNumber("Введите число");
+int number = ReadNumber("Введите число"); 
 
-if (number <= 7 && number > 0)
+if (number <= 7 && number > 0) //проверяем, чтобы число в диапазоне от 0 до 8
 {
     if (number <= 5)
     {
-        Console.WriteLine("нет");
+        Console.WriteLine("нет"); //выводим данные в консоль
     }
     else
     {
-        Console.WriteLine("да");
+        Console.WriteLine("да"); //выводим данные в консоль
     }
 }
 else
 {
-    Console.WriteLine("Вы ввели неверное значение");
+    Console.WriteLine("Вы ввели неверное значение"); //выводим данные в консоль
 }
