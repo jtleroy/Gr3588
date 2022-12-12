@@ -14,15 +14,16 @@ int ReadData(string msg)
 }
 
 // метод находит расстояние между точками на плоскости
-double abc(double x1, double y1, double x2, double y2)
+double distanceBetweenPoints(double x1, double y1, double x2, double y2)
 {
     double distance = Math.Sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
     return distance;
 }
 
+//Метод выводыт данные пользователю
 void PrintData(string msg, double res)
 {
     Console.WriteLine(msg + res);
 }
 
-PrintData("Расстояние между точками: ", abc(x1, y1, x2, y2));
+PrintData("Расстояние между точками: ", distanceBetweenPoints(x1, y1, x2, y2));
